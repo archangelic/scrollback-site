@@ -1,6 +1,6 @@
 # scrollback.archangelic.space
 
-The website for Scrollback: its privacy policy, support and accessibility pages, which the App Store listing links to.
+The website for Scrollback: its privacy policy, support, accessibility and community guidelines pages, which the App Store listing links to.
 
 ## Edit the site
 
