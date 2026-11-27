@@ -4,27 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy · Scrollback</title>
-  <meta name="description" content="Scrollback, an IRCv3 client for iPhone, iPad and Mac.">
+  <meta name="description" content="Scrollback, an IRCv3 client for iPhone and iPad.">
   <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#121725">
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
-  <header>
-    <a class="name" href="index.html">Scrollback</a>
-    <nav aria-label="Site">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="privacy.html" aria-current="page">Privacy</a></li>
-      <li><a href="support.html">Support</a></li>
-      <li><a href="accessibility.html">Accessibility</a></li>
-      <li><a href="guidelines.html">Guidelines</a></li>
-    </ul>
-    </nav>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="images/icon.svg" alt="" width="30" height="30">Scrollback</a>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="guidelines.html">Guidelines</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main id="content">
+  <main id="content" class="page">
+    <div class="wrap narrow">
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated November 25, 2026</p>
+<p class="updated">Last updated November 26, 2026</p>
 <p>Scrollback is made by Michael Hancock, who is responsible for this policy. Scrollback doesn't collect any data about
 you. It has no accounts, no analytics, no advertising and no servers of its own, so nothing you do in the app is sent
 to its developer. This policy describes what the app sends, and where,
@@ -56,9 +62,9 @@ removed before upload.</p>
 <p>If you set up push notifications for a ZNC bouncer, your bouncer sends notifications through the service you
 choose, ntfy or Pushover, using the details you enter. Scrollback only sends those settings to your bouncer.</p>
 
-<h2>Notifications, widgets and Shortcuts</h2>
-<p>Notifications are created on your device. Widgets and Shortcuts read the names of your conversations and their
-latest messages from storage on your device.</p>
+<h2>Notifications and Shortcuts</h2>
+<p>Notifications are created on your device. Shortcuts read the names of your conversations and their latest
+messages from storage on your device.</p>
 
 <h2>Deleting your data</h2>
 <p>Delete a network in Scrollback to remove its settings, password and messages from your device, and from iCloud
@@ -74,9 +80,22 @@ networks and bouncers that received them; ask their operators to remove them.</p
 <h2>Contact</h2>
 <p>Email <a href="mailto:scrollback@archangelic.space">scrollback@archangelic.space</a> with any question about
 privacy.</p>
+    </div>
   </main>
-  <footer>
-    <p>Scrollback by Michael Hancock · <a href="mailto:scrollback@archangelic.space">scrollback@archangelic.space</a></p>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="guidelines.html">Community Guidelines</a></li>
+        <li><a href="mailto:scrollback@archangelic.space">scrollback@archangelic.space</a></li>
+      </ul>
+      <p>Scrollback by Michael Hancock.</p>
+      <p class="legal">iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries.
+        App Store is a service mark of Apple Inc.</p>
+    </div>
   </footer>
 </body>
 </html>

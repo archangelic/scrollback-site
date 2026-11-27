@@ -3,47 +3,291 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scrollback</title>
-  <meta name="description" content="Scrollback, an IRCv3 client for iPhone, iPad and Mac.">
+  <title>Scrollback · IRC for iPhone and iPad</title>
+  <meta name="description" content="Scrollback is an IRC client for iPhone and iPad built on modern IRCv3: history that's waiting for you, replies, reactions, bouncers, and fonts made for reading. No accounts, no analytics.">
   <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#121725">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Scrollback · IRC that feels brand new">
+  <meta property="og:description" content="An IRC client for iPhone and iPad, built on modern IRCv3.">
+  <meta property="og:url" content="https://scrollback.archangelic.space/">
+  <meta property="og:image" content="https://scrollback.archangelic.space/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
-  <header>
-    <a class="name" href="index.html">Scrollback</a>
-    <nav aria-label="Site">
-    <ul>
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="privacy.html">Privacy</a></li>
-      <li><a href="support.html">Support</a></li>
-      <li><a href="accessibility.html">Accessibility</a></li>
-      <li><a href="guidelines.html">Guidelines</a></li>
-    </ul>
-    </nav>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="images/icon.svg" alt="" width="30" height="30">Scrollback</a>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="guidelines.html">Guidelines</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main id="content">
-<h1>Scrollback</h1>
-<p class="lead">An IRC client for iPhone, iPad and Mac, built on modern IRCv3.</p>
-<p>Scrollback connects to IRC networks and to bouncers such as soju and ZNC. It loads the history you missed, keeps
-read positions in step with your other clients, and supports replies, reactions, typing indicators and messages with
-line breaks wherever the server does.</p>
-<h2>Features</h2>
-<ul class="features">
-  <li>Message history and read sync, through IRCv3 chat history and read markers.</li>
-  <li>All of a soju bouncer's networks from one login.</li>
-  <li>Search across every conversation, including a soju bouncer's stored history.</li>
-  <li>Uploads to your bouncer's file host, with photos shrunk and their location removed.</li>
-  <li>Image previews, off until you turn them on, from the sites you choose.</li>
-  <li>iCloud sync of your networks and passwords.</li>
-  <li>Widgets, Shortcuts and Focus filters.</li>
-  <li>Fonts made for easier reading, VoiceOver support and full keyboard control.</li>
-</ul>
-<p>Scrollback has no accounts, no analytics and no servers of its own. Read the <a href="privacy.html">privacy
-policy</a> for exactly what it sends where.</p>
+    <div class="hero">
+      <div class="wrap">
+        <img class="icon" src="images/icon.svg" alt="" width="96" height="96">
+        <h1>IRC that feels <em>brand&nbsp;new</em></h1>
+        <p class="lead">Scrollback is an IRC client for iPhone and iPad, built on modern IRCv3. The history you
+          missed is waiting when you open it, and replies, reactions and typing work wherever your server
+          supports them.</p>
+        <div class="actions">
+          <span class="soon">Coming soon to the App Store</span>
+          <a class="button secondary" href="#features">See what's inside</a>
+        </div>
+        <div class="fan">
+          <figure class="left">
+            <img class="phone" src="images/phone-networks.jpg" width="644" height="1400"
+                 alt="The network list: Lantern, Harbor and Meadow, each with its channels and unread counts.">
+          </figure>
+          <figure class="center">
+            <img class="phone" src="images/phone-lounge.jpg" width="644" height="1400"
+                 alt="A conversation in #lounge with an image preview of Earthrise, emoji reactions, a reply and someone typing.">
+          </figure>
+          <figure class="right">
+            <img class="phone" src="images/phone-swift-dark.jpg" width="644" height="1400"
+                 alt="The #swift channel in dark mode, with a multiline message of code and reactions under it.">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="center-text">
+          <span class="eyebrow">Features</span>
+          <h2 class="section-title">Everything modern IRC can do, <em>in your pocket</em></h2>
+          <p class="section-lead">Scrollback speaks the IRCv3 extensions that servers like Ergo, soju and
+            InspIRCd offer, and works with any IRC network.</p>
+        </div>
+        <ul class="grid">
+          <li class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg></span>
+            <h3>History that waits for you</h3>
+            <p>Messages you missed load when you open a conversation, and read positions stay in step with your
+              other clients.</p>
+          </li>
+          <li class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 6 6v5"/></svg></span>
+            <h3>Replies and reactions</h3>
+            <p>Answer a message directly, react with any emoji, and see who's typing, on servers that support
+              them.</p>
+          </li>
+          <li class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h13"/></svg></span>
+            <h3>Messages with line breaks</h3>
+            <p>Send code and lists as one message where the server takes multiline messages, and as separate
+              lines where it doesn't.</p>
+          </li>
+          <li class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg></span>
+            <h3>Bouncers, built in</h3>
+            <p>All of a soju bouncer's networks from one login. ZNC logins, playback, and push notifications
+              through ntfy or Pushover.</p>
+          </li>
+          <li class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg></span>
+            <h3>Photos and previews</h3>
+            <p>Share photos through your bouncer's file host, shrunk and with their location removed. Image
+              previews are off until you turn them on.</p>
+          </li>
+          <li class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <h3>Secure by default</h3>
+            <p>TLS with certificate pinning for self-signed servers, SASL logins, and servers' strict transport
+              policies honored.</p>
+          </li>
+          <li class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5"/><path d="M8 13l4-1 4 1"/><path d="M10 17l2-5 2 5"/><circle cx="12" cy="5.5" r=".6" fill="currentColor"/></svg></span>
+            <h3>Accessible throughout</h3>
+            <p>VoiceOver labels and actions everywhere, Dynamic Type, reading fonts, and full keyboard control
+              on iPad.</p>
+          </li>
+          <li class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
+            <h3>Shortcuts and Focus</h3>
+            <p>Send messages, count mentions and mark everything read from Shortcuts, and choose which networks
+              may notify during a Focus.</p>
+          </li>
+          <li class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7"/><path d="M4 14s1.5-2 5-2 5 2 8 2 3-1 3-1V4s-1 1-3 1-5-2-8-2-5 2-5 2z"/></svg></span>
+            <h3>Tools for staying safe</h3>
+            <p>Report a message to a channel's operators or the network's staff, and ignore anyone, hiding
+              everything they send.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <div class="feature">
+          <div class="copy">
+            <span class="eyebrow">Networks</span>
+            <h2 class="section-title">Every network, <em>one list</em></h2>
+            <p class="section-lead">Add a server, a bouncer, or a whole soju account, and every conversation
+              lands in one list you can read at a glance.</p>
+            <ul>
+              <li><strong>Unread counts and mentions</strong> on every channel and private message.</li>
+              <li><strong>A soju bouncer's networks</strong> appear by themselves, and stay in step as you add
+                more.</li>
+              <li><strong>iCloud sync</strong> brings your networks and passwords to your other devices.</li>
+              <li><strong>Setup links</strong> share a network's settings with friends, without the
+                password.</li>
+            </ul>
+          </div>
+          <figure class="shot">
+            <img class="phone" src="images/phone-networks.jpg" width="644" height="1400" loading="lazy"
+                 alt="The network list with three networks, their channels, and unread and mention counts.">
+          </figure>
+        </div>
+
+        <div class="feature flip">
+          <div class="copy">
+            <span class="eyebrow">Search</span>
+            <h2 class="section-title">Find <em>anything</em> anyone said</h2>
+            <p class="section-lead">Search every conversation at once, or just one. Narrow it down with
+              <code>from:</code> and <code>in:</code>, then jump straight to the message.</p>
+            <ul>
+              <li><strong>Your soju bouncer's stored history</strong> is searched too, not just what's on
+                this device.</li>
+              <li><strong>Mentions</strong> gathers every message that names you or your highlight words.</li>
+            </ul>
+          </div>
+          <figure class="shot">
+            <img class="phone" src="images/phone-search.jpg" width="644" height="1400" loading="lazy"
+                 alt="Search results for the word reconnect, from three channels on two networks.">
+          </figure>
+        </div>
+
+        <div class="feature">
+          <div class="copy">
+            <span class="eyebrow">Reading</span>
+            <h2 class="section-title">Made for <em>reading</em></h2>
+            <p class="section-lead">Pick a font designed for dyslexia or low vision, set the size and spacing,
+              and watch a live preview of the conversation as you choose.</p>
+            <ul>
+              <li><strong>Atkinson Hyperlegible, Lexend and OpenDyslexic</strong>, plus monospaced fonts for
+                code.</li>
+              <li><strong>Text that follows your system size</strong>, or stays where you set it.</li>
+              <li><strong>VoiceOver reads out mentions</strong> as they arrive in the open conversation.</li>
+            </ul>
+          </div>
+          <figure class="shot">
+            <img class="phone" src="images/phone-fonts.jpg" width="644" height="1400" loading="lazy"
+                 alt="The font picker with Atkinson Hyperlegible chosen, under a preview of the conversation.">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase">
+      <div class="wrap center-text">
+        <span class="eyebrow">iPad</span>
+        <h2 class="section-title">Room for the <em>whole conversation</em></h2>
+        <p class="section-lead">Your networks stay beside the conversation on iPad, with keyboard shortcuts for
+          moving between them.</p>
+        <img class="tablet" src="images/tablet-lounge.jpg" width="1600" height="1200" loading="lazy"
+             alt="Scrollback on iPad: the network list beside the #lounge conversation.">
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap center-text">
+        <span class="eyebrow">Under the hood</span>
+        <h2 class="section-title">Fluent in <em>IRCv3</em></h2>
+        <p class="section-lead">Scrollback negotiates these with every server, and uses each one the server
+          offers.</p>
+        <ul class="chips" aria-label="Supported IRCv3 extensions">
+          <li>chathistory</li>
+          <li>read-marker</li>
+          <li>multiline</li>
+          <li>+reply</li>
+          <li>+react</li>
+          <li>+typing</li>
+          <li>message-tags</li>
+          <li>server-time</li>
+          <li>echo-message</li>
+          <li>labeled-response</li>
+          <li>batch</li>
+          <li>sasl</li>
+          <li>sts</li>
+          <li>account-tag</li>
+          <li>away-notify</li>
+          <li>setname</li>
+          <li>monitor</li>
+          <li>bot</li>
+          <li>standard-replies</li>
+          <li>soju.im/bouncer-networks</li>
+          <li>soju.im/search</li>
+          <li>filehost</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <span class="eyebrow">Privacy</span>
+        <h2 class="section-title">Your conversations are <em>yours</em></h2>
+        <p class="section-lead">Scrollback connects only to the servers you add. Read the
+          <a href="privacy.html">privacy policy</a> for exactly what it sends, and where.</p>
+        <div class="points">
+          <div>
+            <h3>No accounts</h3>
+            <p>There's nothing to sign up for. Add a network and start talking.</p>
+          </div>
+          <div>
+            <h3>No analytics or ads</h3>
+            <p>Nothing you do in the app is sent to its developer.</p>
+          </div>
+          <div>
+            <h3>No servers of its own</h3>
+            <p>Messages travel between you and your IRC servers, and stay on your device.</p>
+          </div>
+          <div>
+            <h3>Passwords in the Keychain</h3>
+            <p>Logins live in the keychain, or iCloud Keychain when you turn on sync. Setup links never carry
+              them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap narrow">
+        <img class="icon" src="images/icon.svg" alt="" width="72" height="72">
+        <h2 class="section-title">See you on <em>IRC</em></h2>
+        <p class="section-lead">Questions, ideas or a server Scrollback doesn't get along with? Email
+          <a href="mailto:scrollback@archangelic.space">scrollback@archangelic.space</a>.</p>
+        <span class="soon">Coming soon to the App Store</span>
+      </div>
+    </section>
   </main>
-  <footer>
-    <p>Scrollback by Michael Hancock · <a href="mailto:scrollback@archangelic.space">scrollback@archangelic.space</a></p>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="guidelines.html">Community Guidelines</a></li>
+        <li><a href="mailto:scrollback@archangelic.space">scrollback@archangelic.space</a></li>
+      </ul>
+      <p>Scrollback by Michael Hancock.</p>
+      <p class="legal">iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries.
+        App Store is a service mark of Apple Inc. Screenshots show a fictional community.</p>
+    </div>
   </footer>
 </body>
 </html>

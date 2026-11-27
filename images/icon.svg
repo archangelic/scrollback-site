@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Scrollback">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#323a4e"/>
+      <stop offset="1" stop-color="#181c27"/>
+    </linearGradient>
+    <linearGradient id="hash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7c36b"/>
+      <stop offset="1" stop-color="#ea9a26"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+  <rect width="1024" height="1024" rx="228" fill="url(#shine)"/>
+  <g fill="url(#hash)">
+    <rect x="372" y="200" width="112" height="624" rx="56" transform="rotate(12 428 512)"/>
+    <rect x="560" y="200" width="112" height="624" rx="56" transform="rotate(12 616 512)"/>
+    <rect x="212" y="372" width="600" height="112" rx="56"/>
+    <rect x="212" y="548" width="600" height="112" rx="56"/>
+  </g>
+</svg>
