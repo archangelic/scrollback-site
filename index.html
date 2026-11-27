@@ -3,12 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scrollback</title>
-  <meta name="description" content="Scrollback, an IRCv3 client for iPhone, iPad and Mac.">
+  <title>Scrollback: IRC client for iPhone, iPad and Mac</title>
+  <meta name="description" content="Scrollback is an IRC client for iPhone, iPad and Mac. IRCv3 chat history, ZNC and soju bouncers, search, uploads and full VoiceOver support. No accounts, no tracking.">
+  <link rel="canonical" href="https://scrollback.archangelic.space/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://scrollback.archangelic.space/">
+  <meta property="og:title" content="Scrollback: IRC client for iPhone, iPad and Mac">
+  <meta property="og:description" content="Open it and the conversation you missed is already there. IRCv3, ZNC and soju, built for VoiceOver and large text.">
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Scrollback",
+    "applicationCategory": "CommunicationApplication",
+    "operatingSystem": "iOS 17 or later, iPadOS 17 or later, macOS on Apple silicon",
+    "url": "https://scrollback.archangelic.space/",
+    "description": "An IRC client for iPhone, iPad and Mac with IRCv3 chat history, ZNC and soju bouncer support, search, uploads and full VoiceOver support."
+  }
+  </script>
 </head>
-<body>
+<body class="home">
   <a class="skip" href="#content">Skip to content</a>
   <header>
     <a class="name" href="index.html">Scrollback</a>
@@ -23,24 +39,170 @@
     </nav>
   </header>
   <main id="content">
-<h1>Scrollback</h1>
-<p class="lead">An IRC client for iPhone, iPad and Mac, built on modern IRCv3.</p>
-<p>Scrollback connects to IRC networks and to bouncers such as soju and ZNC. It loads the history you missed, keeps
-read positions in step with your other clients, and supports replies, reactions, typing indicators and messages with
-line breaks wherever the server does.</p>
-<h2>Features</h2>
-<ul class="features">
-  <li>Message history and read sync, through IRCv3 chat history and read markers.</li>
-  <li>All of a soju bouncer's networks from one login.</li>
-  <li>Search across every conversation, including a soju bouncer's stored history.</li>
-  <li>Uploads to your bouncer's file host, with photos shrunk and their location removed.</li>
-  <li>Image previews, off until you turn them on, from the sites you choose.</li>
-  <li>iCloud sync of your networks and passwords.</li>
-  <li>Widgets, Shortcuts and Focus filters.</li>
-  <li>Fonts made for easier reading, VoiceOver support and full keyboard control.</li>
-</ul>
-<p>Scrollback has no accounts, no analytics and no servers of its own. Read the <a href="privacy.html">privacy
-policy</a> for exactly what it sends where.</p>
+
+<section class="hero" aria-labelledby="title">
+  <div class="hero-text">
+    <h1 id="title">Scrollback is an IRC client for iPhone, iPad and Mac</h1>
+    <p class="lead">Built on modern IRCv3 and made for ZNC and soju. Open it, and the conversation you missed is
+    already there.</p>
+    <p class="cta"><span class="store">Coming soon to the App Store</span>
+      <a href="#features">See what it does</a></p>
+    <p class="terms">Free to try for 14 days, then one purchase for iPhone, iPad and Mac. No subscription, no
+    account.</p>
+  </div>
+
+  <figure class="phone-wrap">
+    <div class="phone" role="img" aria-label="Illustration of Scrollback on iPhone: a channel that has loaded 214 missed messages from the bouncer, with a reply, a reaction and someone typing.">
+      <div class="phone-top">
+        <span class="back" aria-hidden="true">‹</span>
+        <span class="chan">#homelab<small>Libera.Chat · 412 people</small></span>
+      </div>
+      <ol class="chat">
+        <li class="old"><span class="t">23:58</span><b class="n3">you</b> ok, rebooting the nas. back tomorrow</li>
+        <li class="old"><span class="t">23:59</span><b class="n2">tobias</b> good luck 🫡</li>
+        <li class="gap">214 messages while you were away, from your bouncer</li>
+        <li><span class="t">07:15</span><b class="n4">kestrel</b> morning all. who broke dns this time</li>
+        <li><span class="t">07:16</span><b class="n2">tobias</b> not me, for once</li>
+        <li><span class="t">08:41</span><b class="n1">mira</b> anyone running soju behind caddy?</li>
+        <li><span class="t">08:42</span><b class="n2">tobias</b> yep, works fine. turn on the file host while you're in there</li>
+        <li class="reply"><span class="t">08:43</span><b class="n1">mira</b><span class="quote">tobias: turn on the file host…</span> oh nice, uploads from my phone?</li>
+        <li><span class="t">08:43</span><b class="n3">you</b> straight to the bouncer, location stripped
+          <span class="react">👍 2</span></li>
+        <li class="typing">tobias is typing…</li>
+      </ol>
+      <div class="composer"><span>Message #homelab</span></div>
+    </div>
+    <figcaption>Illustration. Screenshots coming at launch.</figcaption>
+  </figure>
+</section>
+
+<section class="band" aria-labelledby="missed">
+  <h2 id="missed">Nothing you missed is lost</h2>
+  <div class="three">
+    <div>
+      <h3>History from your bouncer</h3>
+      <p>Scrollback asks your bouncer or server for exactly what happened while your phone was asleep, through IRCv3
+      chat history or ZNC playback, and fills the gap without duplicates.</p>
+    </div>
+    <div>
+      <h3>Read on one device, read everywhere</h3>
+      <p>Read markers keep your place in step with your other clients, so you don't scroll past the same messages on
+      your laptop.</p>
+    </div>
+    <div>
+      <h3>Notifications through ZNC</h3>
+      <p>Scrollback sets up ZNC's push module for you, sending mentions and private messages to ntfy or Pushover while
+      the app is closed. Each one opens the right conversation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="features" aria-labelledby="features-title">
+  <h2 id="features-title">Everything a daily IRC client needs</h2>
+  <ul class="grid">
+    <li><h3>Every soju network, one login</h3><p>Add your soju bouncer once and each of its networks shows up in the
+      sidebar.</p></li>
+    <li><h3>Search</h3><p>Find a message across every conversation, including history stored on your soju
+      bouncer.</p></li>
+    <li><h3>Photos and files</h3><p>Upload to your bouncer's file host or one you set up. Photos are shrunk and their
+      location removed first.</p></li>
+    <li><h3>Image previews you control</h3><p>Off until you turn them on, then only from the sites you choose.</p></li>
+    <li><h3>iCloud sync</h3><p>Your networks follow you between iPhone, iPad and Mac. Passwords stay in iCloud
+      Keychain.</p></li>
+    <li><h3>Shortcuts and Focus</h3><p>Send messages and open conversations from Shortcuts, and choose which networks
+      can notify you during a Focus.</p></li>
+    <li><h3>Replies, reactions and more</h3><p>Threaded replies, emoji reactions, typing indicators and messages with
+      line breaks, wherever the server supports them.</p></li>
+    <li><h3>Made for keyboards</h3><p>Nickname completion, message recall and shortcuts to move between conversations
+      on iPad and Mac.</p></li>
+  </ul>
+</section>
+
+<section class="band a11y" aria-labelledby="a11y-title">
+  <div>
+    <h2 id="a11y-title">Built for VoiceOver, Voice Control and large text</h2>
+    <p>Every message reads as one item, with reply, react and copy as VoiceOver actions. Chat text follows the system
+    text size up to the largest accessibility sizes. Nickname colors keep readable contrast in light and dark, and
+    nothing depends on color alone.</p>
+    <p><a href="accessibility.html">How Scrollback works with accessibility features</a></p>
+  </div>
+  <ul class="fonts" aria-label="Fonts included for easier reading">
+    <li>Atkinson Hyperlegible</li>
+    <li>Atkinson Hyperlegible Mono</li>
+    <li>Lexend</li>
+    <li>OpenDyslexic</li>
+  </ul>
+</section>
+
+<section class="band" aria-labelledby="ircv3-title">
+  <h2 id="ircv3-title">Modern IRC, supported properly</h2>
+  <p>Scrollback speaks IRCv3, the current set of IRC extensions, and turns each one on when the server offers it.</p>
+  <div class="scroll">
+  <table class="specs">
+    <thead><tr><th scope="col">What you get</th><th scope="col">IRCv3 extensions</th></tr></thead>
+    <tbody>
+      <tr><td>Missed messages and older history</td><td>chathistory, event-playback, server-time, batch</td></tr>
+      <tr><td>Your place kept across devices</td><td>read-marker</td></tr>
+      <tr><td>Replies, reactions and typing</td><td>+reply, +react, +typing</td></tr>
+      <tr><td>Messages with line breaks</td><td>multiline</td></tr>
+      <tr><td>Deleted and renamed</td><td>message-redaction, channel-rename</td></tr>
+      <tr><td>Secure sign-in</td><td>SASL PLAIN and EXTERNAL, STS</td></tr>
+      <tr><td>Know who's online</td><td>MONITOR, away-notify, account-notify</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="faq-title">
+  <h2 id="faq-title">Questions</h2>
+  <div class="faq">
+    <div>
+      <h3>Does it work with ZNC?</h3>
+      <p>Yes. Choose ZNC when you add a network and enter your ZNC user, network and password. Scrollback supports
+      ZNC's playback and self-message modules and can set up its push module.</p>
+    </div>
+    <div>
+      <h3>Does it work with soju?</h3>
+      <p>Yes. Sign in once with SASL and all of the bouncer's networks appear, with its stored history and file
+      host.</p>
+    </div>
+    <div>
+      <h3>Do I need a bouncer?</h3>
+      <p>No. Scrollback connects to any IRC network directly. A bouncer keeps you in your channels while your phone is
+      asleep, so history is waiting when you come back.</p>
+    </div>
+    <div>
+      <h3>Does it stay connected in the background?</h3>
+      <p>iPhone and iPad pause apps soon after you leave them. Scrollback uses the time it's given, then reconnects
+      and fills in what you missed when you return.</p>
+    </div>
+    <div>
+      <h3>What does it run on?</h3>
+      <p>iPhone and iPad with iOS 17 or iPadOS 17 or later, and Mac computers with Apple silicon.</p>
+    </div>
+    <div>
+      <h3>Is it a subscription?</h3>
+      <p>No. Try everything free for 14 days, then unlock it with one purchase that covers iPhone, iPad and Mac and
+      can be shared with your family.</p>
+    </div>
+    <div>
+      <h3>What does it collect?</h3>
+      <p>Nothing. There are no accounts, analytics or servers of its own. The <a href="privacy.html">privacy
+      policy</a> lists exactly what is sent where.</p>
+    </div>
+    <div>
+      <h3>How do I get help?</h3>
+      <p>Email <a href="mailto:scrollback@archangelic.space">scrollback@archangelic.space</a>. The
+      <a href="support.html">support page</a> covers common setup questions.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band closing" aria-labelledby="closing-title">
+  <h2 id="closing-title">Coming soon to the App Store</h2>
+  <p>Scrollback for iPhone, iPad and Mac. Free to try for 14 days.</p>
+</section>
+
   </main>
   <footer>
     <p>Scrollback by Michael Hancock · <a href="mailto:scrollback@archangelic.space">scrollback@archangelic.space</a></p>
